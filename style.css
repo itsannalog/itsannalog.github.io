@@ -1,0 +1,104 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	background-image: url(tile.png);
+	background-repeat: repeat;
+    
+}
+
+main {
+	display: block;
+
+	width: 70%;
+	margin: auto;
+	background-color: #454545;
+    padding-top: 5px;
+	text-align: center;
+	color: whitesmoke;
+
+	font-size: 18px;
+	font-family: "Alef", sans-serif;
+}
+
+main h1{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+main h3{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+main p {
+	padding: 15px;
+}
+main ul{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+nav {
+	width:  50%;
+	margin: auto;
+	height: 70px;
+
+	font-size: 26px;
+	font-family: "Alef", sans-serif;
+    
+	text-align: center;
+}
+
+.navHolder {
+	height: 70px;
+	width: auto;
+	display: block;
+	padding-top: 3%;
+}
+
+.navSelected {
+	font-weight: bolder;
+    font-variant: small-caps;
+}
+
+nav ul {
+	list-style: none;
+	display: inline;
+}
+
+nav ul li {
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+nav ul li a {
+	color: WHITE;
+	text-decoration: none;
+}
+
+a:link {
+    color: #15c8c5;
+}
+
+a:visited {
+    color: #15c8c5;
+}
+
+a:hover {
+    color: #0d7e7c;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  text-align: left;
+}
+.image > img:hover {
+  width: auto;
+  height: auto;
+}
