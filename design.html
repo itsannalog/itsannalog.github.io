@@ -14,32 +14,42 @@
     <link rel="icon" href="icon.png">
 	<meta name="description" content="Annalog's homepage and portfolio." />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>   
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'> 
 </head>
-<body id = "body" class = "dark-mode">
-    <img src = "logo.png" height = 100px align = center/>
+<body>
+    <img class = "shaker" src = "logo.png" height = 100px align = center/>
 	<nav>
 		<div id="navHolder" class="navHolder">
 			<ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-				<li class="navSelected"><a href="design.html">&lt;Design&gt;</a></li>
-
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="games.html">Games</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="force.html">FORCE</a>
+                      <a href="cope.html">cope</a>
+                      <a href="sandwich.html">Sandwich Stacker</a>
+                    </div>
+                  </div> 
+                </li>
+				<li><a href="design.html">&lt;Design&gt;</a></li>
 				<li><a href="connect.html">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
 	<main>
-        <img src="portfolios%20banner.png" width=50%>
-        <br><br>
-        <h2>Esports Branding</h2>
-         <iframe src="esports%20portfolio.pdf#toolbar=0" width="100%" height="500px"></iframe>
+        <h1>Graphic Design</h1>
+        <h2>Esports GFX</h2>
+         <iframe src="gfx_portfolio.pdf#toolbar=0" width="100%" height="800px"></iframe>
         <br><br><br>
-        <h2>Game Design</h2>
-         <iframe src="game%20portfolio.pdf#toolbar=0" width="100%" height="500px"></iframe>
+        <h2>Game Assets</h2>
+         <iframe src="game%20portfolio.pdf#toolbar=0" width="100%" height="800px"></iframe>
     </main>
     <footer>
-        <p>Last Updated: May 2019</p>
+        <p>Last Updated: July 2019</p>
     </footer> <br>
 
 </body>

@@ -13,23 +13,25 @@ body {
 
 main {
 	display: block;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	background-color: rgba(15,15,15,0.8);
-    padding-top: 2%;
+    padding-top: 10px;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
 	text-align: center;
 	color: whitesmoke;
 	font-size: 18px;
-	font-family: "Alef", sans-serif;
+	font-family: 'Open Sans';
 }
 main h1{
+    font-size: 50px;
     opacity: 1;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0.5%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bungee Shade';
+    font-weight: normal;
 }
 main h2{
     opacity: 1;
@@ -61,22 +63,26 @@ main p {
     margin-bottom: 0px;
 	padding: 0px;
 }
-main ul{
-    opacity: 1;
-    padding-top: 0px;
-    margin-top: 0px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+
+a:link {
+    color: #15c8c5;
+    text-decoration: none;
+}
+a:visited {
+    color: #15c8c5;
+}
+a:hover {
+    color: #0d7e7c;
 }
 
 nav {
     display: block;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	background-color: #101010;
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,1);
 	font-size: 26px;
-	font-family: "Alef", sans-serif;
+	font-family: "Open Sans";
 	text-align: center;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -85,10 +91,6 @@ nav {
 	width: auto;
 	padding-top: 1%;
     padding-bottom: 1%
-}
-.navSelected {
-	font-weight: bolder;
-    font-variant: small-caps;
 }
 nav ul {
 	list-style: none;
@@ -108,14 +110,46 @@ nav ul li a {
 	text-decoration: none;
 }
 
-a:link {
-    color: #15c8c5;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
-a:visited {
-    color: #15c8c5;
+.dropdown .dropbtn { 
+  font-size: 26px;
+  font-family: "Open Sans";
+  border: none;
+  outline: none;
+  color: #15c8c6;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
 }
-a:hover {
+.dropdown:hover .dropbtn {
+  color: #0d7e7c;
+}
+.dropdown-content {
+  padding-top: 15px;
+  font-size: 20px;
+  display: none;
+  color: #15c8c6;
+  position: absolute;
+  background-color: #101010;
+  min-width: 50px;
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
     color: #0d7e7c;
+  background-color: #151515;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .flexbox {
@@ -144,7 +178,7 @@ blog-box{
 	text-align: left;
 	color: whitesmoke;
 	font-size: 18px;
-	font-family: "Alef", sans-serif;
+	font-family: "Open Sans";
 }
 blog-box topper{
     display: block;
@@ -168,9 +202,27 @@ blog-box meat{
 
 }
 
+.shaker:hover {
+  animation: shake 0.5s; 
+  animation-iteration-count: infinite; 
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 footer {
 	display: block;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	background-color: #101010;
     box-shadow: inset 0px 8px 0px 0px rgba(0,0,0,0.2);
@@ -179,5 +231,5 @@ footer {
 	text-align: center;
 	color: whitesmoke;
 	font-size: 16px;
-	font-family: "Alef", sans-serif;
+	font-family: "Open Sans";
 }

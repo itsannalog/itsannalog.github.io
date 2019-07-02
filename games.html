@@ -15,51 +15,49 @@
     <link rel="icon" href="icon.png">
 	<meta name="description" content="Annalog's homepage and portfolio." />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>  
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'> 
 </head>
-<body id = "body" class = "dark-mode">
-    <img src = "logo.png" height = 100px align = center/>
+<body>
+    <img class = "shaker" src = "logo.png" height = 100px align = center/>
     <nav>
 		<div id="navHolder" class="navHolder">
 			<ul>
                 <li><a href="index.html">Home</a></li>
-				<li class="navSelected"><a href="games.html">&lt;Games&gt;</a></li>
+				<li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="games.html">&lt;Games&gt;</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="force.html">FORCE</a>
+                      <a href="cope.html">cope</a>
+                      <a href="sandwich.html">Sandwich Stacker</a>
+                    </div>
+                  </div> 
+                </li>
                 <li><a href="design.html">Design</a></li>
-
 				<li><a href="connect.html">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
 	<main>
-        <img src="featured%20banner.png" width=50%>
-        <br>
-        <h1><a href=https://annalog.itch.io/force>FORCE</a></h1>
-        <br>
+        <h1>Games</h1>
         <div class="flexbox">
-            <div style = flex-shrink: 2>
-                 <iframe frameborder="0" src="https://itch.io/embed/412280?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
+            <div>
+                <iframe frameborder="0" src="https://itch.io/embed/412280?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
             </div>
             <div>
-                <br>
-                <p>The FORCE series started off as a game jam project, and in fact it was my very first game and game jam submission. FORCE has now evolved into much more than just a game jam build, featuring hand-drawn animations and several gamemodes.  Created with early contributions from <a href = https://waveparadigm.dev> Adam Gincel</a>, the FORCE series is now an ongoing project with the goal of becoming a finished, marketable product.
-                <br>
-                FORCE is a 2-4 player arena-style fighting game in which you can only kill your opponents by using the environment to your advantage. There are many ways to die, including by your own hand. Use your character's unique abilities to battle against your friends and determine the ultimate winner. To play, you will need at least one friend, one controller per player, and a Windows PC. No one is safe, ever!</p>
-            </div>
-        </div>
-        <br><br><br>
-        <img src="contributions%20banner.png" width=50%>
-        <br><br>
-        <h3>Other Games:</h3> <br>
-        <div class="flexbox">
-            <div style = flex-shrink: 2>
                  <iframe frameborder="0" src="https://itch.io/embed/328139?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
             </div>
             <div>
                 <iframe frameborder="0" src="https://itch.io/embed/311146?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
             </div>
         </div>
-        <br><br>
-        <h3>Asset Contributions:</h3> <br>
+
+        <br>
+        <h1>Contributions</h1>
+        <h3>Assets:</h3> <br>
         <div class="flexbox">
             <div>
                 <iframe frameborder="0" src="https://itch.io/embed/408206?border_width=4&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
@@ -69,9 +67,10 @@
             </div>
             <div>
                 <iframe frameborder="0" src="https://itch.io/embed/376679?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=000000&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
-                <p>Sandwich Stacker created in partnership with <a href="https://lifeskillssoftware.tech/">Life Skills Software</a></p>
             </div>
         </div>
+        <br>
+        <p>For more information on some of these games, click the links in the Games dropdown menu!</p>
     </main>
     <footer>
         <p>Last Updated: May 2019</p>
