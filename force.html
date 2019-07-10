@@ -36,6 +36,7 @@
                     </div>
                   </div> 
                 </li>
+                <li><a href="discord.html">Discord Bot</a></li>
                 <li><a href="design.html">Design</a></li>
 				<li><a href="connect.html">Resume</a></li>
 			</ul>
@@ -43,11 +44,21 @@
 	</nav>
 	<main>
         <h1>FORCE</h1>
-        <p>The FORCE series started off as a game jam project, and in fact it was my very first game and game jam submission. FORCE has now evolved into much more than just a game jam build, featuring hand-drawn animations and several gamemodes.  Created with early contributions from <a href = https://waveparadigm.dev> Adam Gincel</a>, the FORCE series is now an ongoing project with the goal of becoming a finished, marketable product.</p>
-        <br><h3>About the Game:</h3>
         <p>FORCE is a 2-4 player arena-style fighting game in which you can only kill your opponents by using the environment to your advantage. There are many ways to die, including by your own hand. Use your character's unique abilities to battle against your friends and determine the ultimate winner. To play, you will need at least one friend, one controller per player, and a Windows PC. No one is safe, ever!</p>
         <br>
-         <iframe frameborder="0" src="https://itch.io/embed/412280?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
+        <iframe frameborder="0" src="https://itch.io/embed/412280?linkback=true&amp;border_width=4&amp;bg_color=ffffff&amp;fg_color=222222&amp;link_color=15c8c5&amp;border_color=0d7e7c" width="558" height="173"></iframe>
+        <br><br><h2>About the Game:</h2>
+        <p>The FORCE series started off as a game jam project, and in fact it was my very first game and game jam submission. FORCE has now evolved into much more than just a game jam build, featuring hand-drawn animations and several gamemodes.  Created with early contributions from <a href = https://waveparadigm.dev> Adam Gincel</a>, the FORCE series is now an ongoing project with the goal of becoming a finished, marketable product.</p>
+        <br>
+        <h3>The Force Behind FORCE</h3>
+        <p>A simple force vector is the driving mechanic behind FORCE. When a character gains force, this vector becomes non-zero and causes a knockback effect. In addition, force is used when colliding with walls- players cannot die to walls if they are not forced into it. Force is added to the player's movement input, and a friction constant degrades the value of force over a second or two, depending on the magnitute of the force. A simple script changes the force vector when players are hit or otherwise shoved around by arena elements, and as friction decreases the force magnitute, the player regains control of their character.</p>
+        <br>
+        <h3>Balancing</h3>
+        <p>The most immportant thing to me for FORCE's development was making sure each character had a unique playstyle that was viable for more than just one matchup. FORCE has been played competitively as part of the Stevens Game Development Club's yearly Game Developer's Tournament Series (GDTS). Every year, student-made games are featured at this event and students compete in order to win prizes. Over the course of development as well as two features in GDTS, feedback from players and competitors has largely shaped the balancing of characters. Each character has a unique combination of movement speed, ability cooldown time, and ability strength, creating a diverse cast of characters. Balancing will never be over, but with user feedback it's a lot easier to tell what needs a nerf and what needs to be reworked.</p>
+        <br>
+        <h3>Controls</h3>
+        <p>The game itself is simple to play- with only one button and one stick to worry about. As someone who has struggled with the seemingly-infinite button combinations of other fighting games, I wanted the game to be accessable to players of all skill levels, so I focused on a minimalistic control scheme. There are no button combos to master, just a single button and your own reaction time. Even parents, grandparents, and younger siblings can join in on the fun. This makes programming a breeze, but can also limit the character abilities. This compact control scheme forces me to be creative with character abilities, because I know I only have one button to work with.</p>
+        
     </main>
     <footer>
         <p>Last Updated: July 2019</p>

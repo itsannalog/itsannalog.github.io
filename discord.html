@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139179427-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139179427-1');
+    </script>    
+    <title>annalog - Design</title>
+    <link rel="icon" href="icon.png">
+	<meta name="description" content="Annalog's homepage and portfolio." />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'> 
+</head>
+<body>
+    <img class = "shaker" src = "logo.png" height = 100px align = center/>
+	<nav>
+		<div id="navHolder" class="navHolder">
+			<ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="games.html">Games</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="force.html">FORCE</a>
+                      <a href="cope.html">cope</a>
+                      <a href="sandwich.html">Sandwich Stacker</a>
+                    </div>
+                  </div> 
+                </li>
+                <li><a href="discord.html">&lt;Discord Bot&gt;</a></li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="connect.html">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+        <h1>Jacobus the Discord Bot</h1>
+        <p>To help manage our growing communities, I developed a custom Discord bot, Jacobus, to help make management a bit quicker. This bot, named after the old campus student center (which has since been torn down) allows users to self-assign roles, look at cat pictures, and play games to earn points. These points are compiled into a leaderboard, and the top 3 members at the end of each semester get prizes. </p>
+        <br>
+        <h2>Commands</h2>
+        <img src = "!help.PNG" width = 60%>
+        <br><br>
+        <h2>Development Process</h2>
+        <p>When I began developing Jacobus, I didn't know anything about JavaScript or Python, the two most popular languages for developing Discord bots. I decided to go for JavaScript for developing because it was applicable to web development, something I'm already learning about in my spare time. There also seemed to be more resources for Discord.js. </p>
+        <br><h3>Version 1.x.x</h3>
+        <p>The beginning framework of the bot was created following An Idiot Guide's tutorial. Once I had some basics programmed, I let my creativity determine the path of development. I knew I wanted self-assignable roles, so I found a quick YouTube tutorial for that. I also wanted to be able to schedule messages, since Discord still doesn't offer this natively. I found a JavaScript function that could set a timer, and I also learned how to get the current date and time. Development continued like this until I ran into two major problems: Having one file for the whole bot was becoming a bit confusing, and I wanted certain commands to act differently depending on which server they were used in. </p>
+        <br><h3>Version 2.x.x</h3>
+        <p>Back to YouTube I went, this time looking for command handler tutorials. I found one, and it was much simpler than I expected to convert my existing file (then around 1000 lines) to a much cleaner format. It also allowed me to have a dynamic help command, as well as launch and relaunch individual commands without restarting the main process. This was especially exciting to me, as it meant less downtime for updates. For the server-specific settings, I had a bit of trouble. Eventually, I learned about JSON, and decided to store user data in a separate JSON file. The file is dynamic, and data for individual users is sorted by server. When a user leaves a server, their data for that server is deleted, and a new entry is only created when they send their first command. Server-specific settings are also stroed in a JSON file, and include data like the welcome message, the name of the admin role, and the list of commands allowed on the server. </p>
+
+    </main>
+    <footer>
+        <p>Last Updated: July 2019</p>
+    </footer> <br>
+
+</body>
+</html>
