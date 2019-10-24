@@ -16,7 +16,7 @@
 	<meta name="description" content="Annalog's homepage and portfolio." />
 	<link rel="stylesheet" type="text/css" href="style.css" />
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'> 
+    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'> 
 </head>
 <body>
     <img class = "shaker" src = "logo.png" height = 100px align = center/>
@@ -37,7 +37,17 @@
                   </div> 
                 </li>
                 <li><a href="discord.html">Discord Bot</a></li>
-                <li><a href="design.html">Design</a></li>
+               <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        Design 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="gamedesign.html">Game Assets</a>
+                      <a href="stevens.html">Stevens Esports</a>
+                    </div>
+                  </div> 
+                </li>
 				<li><a href="connect.html">Resume</a></li>
 			</ul>
 		</div>
@@ -50,18 +60,30 @@
         <br><br><h2>About the Game:</h2>
         <p>The FORCE series started off as a game jam project, and in fact it was my very first game and game jam submission. FORCE has now evolved into much more than just a game jam build, featuring hand-drawn animations and several gamemodes.  Created with early contributions from <a href = https://waveparadigm.dev> Adam Gincel</a>, the FORCE series is now an ongoing project with the goal of becoming a finished, marketable product.</p>
         <br>
-        <h3>The Force Behind FORCE</h3>
-        <p>A simple force vector is the driving mechanic behind FORCE. When a character gains force, this vector becomes non-zero and causes a knockback effect. In addition, force is used when colliding with walls- players cannot die to walls if they are not forced into it. Force is added to the player's movement input, and a friction constant degrades the value of force over a second or two, depending on the magnitute of the force. A simple script changes the force vector when players are hit or otherwise shoved around by arena elements, and as friction decreases the force magnitute, the player regains control of their character.</p>
         <br>
-        <h3>Balancing</h3>
-        <p>The most immportant thing to me for FORCE's development was making sure each character had a unique playstyle that was viable for more than just one matchup. FORCE has been played competitively as part of the Stevens Game Development Club's yearly Game Developer's Tournament Series (GDTS). Every year, student-made games are featured at this event and students compete in order to win prizes. Over the course of development as well as two features in GDTS, feedback from players and competitors has largely shaped the balancing of characters. Each character has a unique combination of movement speed, ability cooldown time, and ability strength, creating a diverse cast of characters. Balancing will never be over, but with user feedback it's a lot easier to tell what needs a nerf and what needs to be reworked.</p>
+        <h3>Art and Design</h3>
+        <p>FORCE began with what I like to call "programmer graphics" despite the fact that I consider myself to be a fairly capable artist. Characters were simple circles on the screen with different faces, and the background was complicated and busy. I tried to make the colors distinct enough to colorblind users to make up for how similar all of the characters looked, but sometimes this was still confusing. After a graphical overhaul in April 2019, FORCE went from looking basic and bland to having a certain "indie style" graphical design. Plus, now that all the characters have different sihlouettes, it is much easier for colorblind users to distinguish the characters from each other. </p>
+        <div class="row">
+            <div class="half">
+                <img href="imgs/FORCE/FORCE%20GJ%20Sheet.png">
+            </div>
+            <div class="half">
+                <img href="imgs/FORCE/FORCE%20sheet.png">
+            </div>
+        </div>
         <br>
         <h3>Controls</h3>
         <p>The game itself is simple to play- with only one button and one stick to worry about. As someone who has struggled with the seemingly-infinite button combinations of other fighting games, I wanted the game to be accessable to players of all skill levels, so I focused on a minimalistic control scheme. There are no button combos to master, just a single button and your own reaction time. Even parents, grandparents, and younger siblings can join in on the fun. This makes programming a breeze, but can also limit the character abilities. This compact control scheme forces me to be creative with character abilities, because I know I only have one button to work with.</p>
-        
+        <br>
+        <h3>The Force Behind FORCE</h3>
+        <p>A simple force vector is the driving mechanic behind FORCE. When a character gains force, this vector becomes non-zero and causes a knockback effect indicated by a particle trail. In addition, force is used when colliding with walls- players cannot die to walls if they are not forced into it. Force is added to the player's movement input, and a friction constant degrades the value of force over a second or two, depending on the magnitute of the force. A simple script changes the force vector when players are hit or otherwise shoved around by arena elements, and as friction decreases the force magnitute, the player regains control of their character.</p>
+        <br>
+        <h3>Balancing</h3>
+        <p>The most immportant thing to me for FORCE's development was making sure each character had a unique playstyle that was viable for more than just one matchup. FORCE has been played competitively as part of the Stevens Game Development Club's yearly Game Developer's Tournament Series (GDTS). Every year, student-made games are featured at this event and students compete in order to win prizes. Over the course of development as well as two features in GDTS, feedback from players and competitors has largely shaped the balancing of characters. Each character has a unique combination of movement speed, ability cooldown time, and ability strength, creating a diverse cast of characters. Balancing will never be over, but with user feedback it's a lot easier to tell what needs a nerf, what needs to be buffed, and what needs to be completely reworked.</p>
+                
     </main>
     <footer>
-        <p>Last Updated: July 2019</p>
+        <p>Last Updated: September 2019</p>
     </footer> <br>
     
 </body>

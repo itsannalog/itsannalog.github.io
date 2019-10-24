@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-	background-image: url(tile.png);
+	background-image: url(imgs/bg.png);
 	background-repeat: repeat; 
     background-size: cover;
     margin: auto;
@@ -30,14 +30,14 @@ main h1{
     opacity: 1;
     margin: 0px;
     padding: 0px;
-    font-family: 'Bungee Shade';
+    font-family: 'Bungee';
     font-weight: normal;
 }
 main h2{
     opacity: 1;
     margin-top: 0px;
     padding-bottom: 0px;
-    margin-bottom: 1%;
+    margin-bottom: 0;
 }
 main h3{
     opacity: 1;
@@ -45,7 +45,6 @@ main h3{
     padding-bottom: 0px;
     margin-bottom: 0px;
     padding-top: 0px;
-    margin-top: 0px;
 }
 main h5{
     opacity: 1;
@@ -202,6 +201,9 @@ blog-box meat{
 
 }
 
+.shaker{
+    
+}
 .shaker:hover {
   animation: shake 0.5s; 
   animation-iteration-count: infinite; 
@@ -232,4 +234,86 @@ footer {
 	color: whitesmoke;
 	font-size: 16px;
 	font-family: "Open Sans";
+    font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.quarter {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.half {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.third {
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+.twothird {
+  flex: 66.6%;
+  max-width: 66.6%;
+  padding: 0 4px;
+}
+.full {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+.quarter img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.third img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.half img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.full img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.left{
+    text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .third {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .quarter {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .third {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .quarter {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .half {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
