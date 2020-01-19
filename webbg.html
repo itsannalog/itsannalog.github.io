@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139179427-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139179427-1');
+    </script>    
+    <title>annalog - Design</title>
+    <link rel="icon" href="imgs/icon.png">
+	<meta name="description" content="Annalog's homepage and portfolio." />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind|Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class = "shaker" src = "imgs/logo.png" height = 100px align = center/>
+	<nav>
+		<div id="navHolder" class="navHolder">
+			<ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="games.html">Games</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="force.html">FORCE</a>
+                      <a href="cope.html">cope</a>
+                      <a href="sandwich.html">Sandwich Stacker</a>
+                    </div>
+                  </div> 
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="code.html">&lt;Code&gt;</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="discord.html">Discord Bot</a>
+                      <a href="chargen.html">CharGen Bot</a>
+                        <a href="webbg.html">Web Background</a>
+                    </div>
+                  </div> 
+                </li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="connect.html">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+        <h1>Website Background</h1>
+        <p>When I redesigned my website in late 2019/early 2020, I knew I wanted to have a better, more visually engaging landing page. Previously, I had used a screenshot of a piece of art I made with Processing for my Creative Programming class. I wanted to keep a similar design, so I decided to animate that original design.</p>
+        <br><img src="imgs/hero.gif" width="100%"><br>
+        <h2>Code</h2>
+        <p>The website background was made using Processing, an open-source Java graphics library built for artists and visual designers. Before the animation, the program simply picked a random location, drew a dot, drew a line in a random direction in a certain range of length, and then repeated for some number of times. To animate this, I had to rethink how I was drawing the connections. Now, on every frame, each dot looks for new dots within a certain threshold. If both dots are not currently at "max connection capacity", a line will be drawn between them. If the dots move too far apart, the line disconnects. The dots move randomly across the canvas and bounce off the edges. To export as a gif, I recorded my screen for about 30 seconds, used Vegas Pro to make the video loop, and then used an online converter to turn the new video into a gif. This gif is used as the background of my homepage, and a static screenshot is used on every other page.</p>
+<br>
+    </main>
+    <footer>
+        <p>Last Updated: January 2020</p>
+    </footer> <br>
+
+</body>
+</html>

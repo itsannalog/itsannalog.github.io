@@ -14,8 +14,7 @@
     <link rel="icon" href="imgs/icon.png">
 	<meta name="description" content="Annalog's homepage and portfolio." />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Bungee' rel='stylesheet'> 
+    <link href="https://fonts.googleapis.com/css?family=Hind|Teko&display=swap" rel="stylesheet">
 </head>
 <body>
     <img class = "shaker" src = "imgs/logo.png" height = 100px align = center/>
@@ -35,39 +34,39 @@
                     </div>
                   </div> 
                 </li>
-                <li><a href="discord.html">&lt;Discord Bot&gt;</a></li>
-				<li>
+                <li>
                     <div class="dropdown">
                     <button class="dropbtn">
-                        Design
+                        <a href="code.html">&lt;Code&gt;</a> 
                     </button>
                     <div class="dropdown-content">
-                      <a href="gamedesign.html">Game Assets</a>
-                      <a href="stevens.html">Stevens Esports</a>
+                      <a href="discord.html">Discord Bot</a>
+                      <a href="chargen.html">CharGen Bot</a>
+                        <a href="webbg.html">Web Background</a>
                     </div>
                   </div> 
                 </li>
+				<li><a href="design.html">Design</a></li>
 				<li><a href="connect.html">Resume</a></li>
 			</ul>
 		</div>
 	</nav>
 	<main>
         <h1>Jacobus the Discord Bot</h1>
-        <p>To help manage our growing communities at Stevens Esports and C2GS, I developed a custom Discord bot, Jacobus, to help make management a bit quicker. This bot, named after the old campus student center (which has since been torn down), allows users to self-assign roles, look at cat pictures, play games to earn points, and more. These points are compiled into a leaderboard, and the top 3 members at the end of each semester get prizes as a part of our community engagement efforts. Jacobus is currently servicing two servers and over 400 unique users. </p>
-        <br>
-        <h2>Commands</h2>
-        <img src = "imgs/!help.PNG" width = 60%>
+        <p>To help manage our growing communities at Stevens Esports and C2GS, I developed a custom Discord bot, Jacobus, to help make management a bit quicker. This bot, named after the old campus student center (which has since been torn down), allows users to self-assign roles, look at cat pictures, play games to earn points, and more. These points are compiled into a leaderboard, and the top 3 members at the end of each semester get prizes as a part of our community engagement efforts. Designed to be extremely customizable for each server's unique needs, Jacobus has many configuration options. Up until December 2019, Jacobus was online in two servers and responding to requests from over 400 unique users. The next version of Jacobus is in development, and this page will be updated when it goes live!</p>
         <br><br>
         <h2>Development Process</h2>
-        <p>When I decided to make a Discord bot, I didn't know anything about JavaScript or Python, the two most popular languages for developing Discord bots. I decided to go for JavaScript for developing because it was applicable to web development, something I'm already learning about in my spare time. I was also interested in learning about Node.js for future projects. </p>
+        <p>When I decided to make a Discord bot, I didn't know anything about JavaScript or Python, the two most popular languages for developing Discord bots. I decided to go for JavaScript for developing because it was applicable to web development, something I'm already learning about both in and out of class. I was also interested in learning about Node.js for future projects. The skills I've learned through developing this bot have helped me to develop skills in not only JavaScript and working with APIs, but also non-technical skills like community management and project management.</p>
         <br><h3>Version 1.x.x</h3>
-        <p>The beginning framework of the bot was created following <a href = "https://anidiots.guide/">An Idiot Guide's tutorial</a>. Once I had some basics programmed, I let my creativity determine the path of development. I knew I wanted self-assignable roles, so I found a quick YouTube tutorial for that. I also wanted to be able to schedule messages, since Discord still doesn't offer this natively. I found a JavaScript function that could set a timer, and I also learned how to get the current date and time. In general, learning Javascript in this way was fairly straightforward, and I found it easy to create new commands once I knew more about the functionality of Javascript and Discord.js. Development continued in this trial-and-error fashion until I ran into two major problems: Having one file for the whole bot was becoming a bit confusing and overwhelming, and I wanted certain commands to act differently depending on which server they were used in. </p>
+        <p>The beginning framework of the bot was created following <a href = "https://anidiots.guide/" target="_blank">An Idiot Guide's tutorial</a>. Once I had some basics programmed, I let my creativity determine the path of development. I knew I wanted self-assignable roles, so I found a quick YouTube tutorial for that. I also wanted to be able to schedule messages, since Discord still doesn't offer this natively. I found a JavaScript function that could set a timer, and I also learned how to get the current date and time. In general, learning Javascript in this way was fairly straightforward, and I found it easy to create new commands once I knew more about the functionality of Javascript and Discord.js. Development continued in this trial-and-error fashion until I ran into two major problems: Having one file for the whole bot was becoming a bit confusing and overwhelming, and I wanted certain commands to act differently depending on which server they were used in. </p>
         <br><h3>Version 2.x.x</h3>
         <p>First I made a Trello board to keep track of all the features I wanted to add and the bugs I encountered along the way. Then, back to YouTube I went, this time looking for command handler tutorials so I could clean up my code. It was much simpler than I expected to convert my existing file (then around 1000 lines) to a much cleaner format. It also allowed me to have a dynamic help command, as well as launch and relaunch individual commands without restarting the main process. This was especially exciting to me, as it meant less downtime for updates and I could fix bugs on the fly. I can even add completely new commands without taking the bot offline. <br>For the server-specific settings, I had a bit of trouble. It was suggested that I use SQL, but at the time, I didn't know anything about it and thought it was too overwhelming Eventually, I learned about JSON, and decided to store user data in a separate JSON file. The file is dynamic, and data for individual users is sorted by server. When a user leaves a server, their data for that server is deleted, and a new entry is only created when they send their first command. Server-specific settings are also stored in a JSON file, and include data like the welcome message, the name of the admin role, the server specific prefix, and the list of commands allowed on the server. Perhaps I will update the databases to use SQL in the future, but for now, JSON works fine.</p>
+        <br><h3>Version 3.x.x</h3>
+        <p>Version 3 is still in progress, but will feature more server management tools and more options for community engagement, as well as several user experience updates. I've brought along a friend, Tarquin Bennett, to help with development as the project expands in scope. Stay tuned for more info!</p>
 
     </main>
     <footer>
-        <p>Last Updated: September 2019</p>
+        <p>Last Updated: January 2020</p>
     </footer> <br>
 
 </body>

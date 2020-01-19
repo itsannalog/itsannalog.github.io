@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139179427-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-139179427-1');
+    </script>    
+    <title>annalog - Design</title>
+    <link rel="icon" href="imgs/icon.png">
+	<meta name="description" content="Annalog's homepage and portfolio." />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind|Teko&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img class = "shaker" src = "imgs/logo.png" height = 100px align = center/>
+	<nav>
+		<div id="navHolder" class="navHolder">
+			<ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="games.html">Games</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="force.html">FORCE</a>
+                      <a href="cope.html">cope</a>
+                      <a href="sandwich.html">Sandwich Stacker</a>
+                    </div>
+                  </div> 
+                </li>
+                <li>
+                    <div class="dropdown">
+                    <button class="dropbtn">
+                        <a href="code.html">&lt;Code&gt;</a> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="discord.html">Discord Bot</a>
+                      <a href="chargen.html">CharGen Bot</a>
+                        <a href="webbg.html">Web Background</a>
+                    </div>
+                  </div> 
+                </li>
+				<li><a href="design.html">Design</a></li>
+				<li><a href="connect.html">Resume</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+        <h1>Character Generation Twitter Bot</h1>
+        <p>For my final project of Creative Programming, I decided to create a character generation bot. Inspired by the <a href="https://twitter.com/emojimashupbot?lang=en" target="_blank">Emoji Mashup Bot</a>, this bot would post hourly with a new character creation featuring a visual representation of the character, randomly generated name, class, gender, and more. While the bot is no longer live, artists, designers, and other creatives can use this bot as character inspiration for games, DnD, overcoming art block, etc. You can see an example post <a href="https://twitter.com/itsannalog/status/1206791736544104450" target="_blank">here</a> and <a href="https://twitter.com/itsannalog/status/1206792013540184064/photo/1" target="_blank">here</a>.</p>
+        <br>
+        <div class="gallery">
+            <div class="row">
+                <div class="col-half">
+                    <div class="gallery-element">
+                        <img src="imgs/chargen/ex1.jpg">
+                    </div>
+                </div>
+                <div class="col-half">
+                    <div class="gallery-element">
+                        <img src="imgs/chargen/ex2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2>Development Process</h2>
+        <h3>Art</h3>
+        <p>Before I programmed a single line of code, I sat down and designed all of the body options as well as some of the hair and accessories. To do this, I used an app called Procreate and sketched the basic body dimensions I wanted. I had to ensure each component would look cohesive and line up properly, so I designed each item on its own layer from the bottom up, starting with the skin and finishing with accessories. By designing first in layers, I could make sure everything overlapped in the right spots so I knew which order to draw the images in the code. Once I was finished, I exported each layer as a transparent PNG.</p>
+        <br><h3>Code</h3>
+        <p>This bot was made using Processing, an open-source Java graphics library built for artists and visual designers. Using this library I was able to create an application that could generate characters at the press of a button, and post them to my Twitter account with another press, complete with animations and post confirmations. My favorite part about this project is how easy it is to add more hair/skin/body/etc options- just drop the new assets in the right folder and the code will automatically detect and them to the components array the next time it runs.</p>
+<br>
+    </main>
+    <footer>
+        <p>Last Updated: January 2020</p>
+    </footer> <br>
+
+</body>
+</html>
